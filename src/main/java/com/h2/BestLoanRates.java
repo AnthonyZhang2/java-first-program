@@ -12,15 +12,15 @@ public class BestLoanRates {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your name");
-
         String name = sc.nextLine();
-
         System.out.println("Hello " + name);
 
     }
 
     public static float getRates(int loanTermInYears){
+        if(bestRates.containsKey(loanTermInYears)){
+            return bestRates.get(loanTermYears);
+        }
         return 0.0f;
     }
-
 }
