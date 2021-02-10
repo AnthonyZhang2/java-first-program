@@ -12,7 +12,7 @@ public class SavingsCalculator {
 
     private float sumOfCredits(){
         float sum = 0.0f;
-            for(i = 0; i < credits.length; i++) {
+            for(int i = 0; i < credits.length; i++) {
                 sum += credits[i];
             }
         return sum;
