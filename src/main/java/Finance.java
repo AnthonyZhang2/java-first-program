@@ -10,5 +10,5 @@ public class Finance {
             MORTGAGE_CALCULATOR, "usage: mortgageCalculator <loanAmount> <termInYears> <annualRate>"
     );
 
-    }
 }
+
