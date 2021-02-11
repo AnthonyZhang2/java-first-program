@@ -22,7 +22,7 @@ public class MortgageCalculator {
         return interestRate;
     }
 
-    public void calculateMonthlyPayments(){
+    public void calculateMonthlyPayment(){
         long P = loanAmount;
         float r = getMonthlyInterestRate();
         int n = getNumberOfPayments();
