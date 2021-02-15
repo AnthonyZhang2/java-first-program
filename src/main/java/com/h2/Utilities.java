@@ -24,7 +24,7 @@ public class Utilities
         return out;
     }
 
-    public static int getFloatValue(String in){
+    public static float getFloatValue(String in){
         float out = Float.MIN_VALUE;
         try{
             out = Float.parseFloat(in);
