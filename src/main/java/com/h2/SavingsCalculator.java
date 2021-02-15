@@ -55,16 +55,7 @@ public class SavingsCalculator {
     }
 
     private static boolean validateCommandArguments(String[] args){
-        String check = args[0];
-        switch(args[0]){
-            case 1: check == "bestLoanRates";
-                return args.length == 1;
-            case 2:
-                    return args.length == 3;
-            case 3:
-                return args.length == 4;
-
-        }
+        
         return false;
     }
 
