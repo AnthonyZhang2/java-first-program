@@ -54,9 +54,6 @@ public class SavingsCalculator {
 
     }
 
-    private static boolean validateCommandArguments(String[] args){
-        
-        return false;
-    }
+
 
 }
