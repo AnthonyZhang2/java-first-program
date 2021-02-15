@@ -36,8 +36,7 @@ public class SavingsCalculator {
         return sumOfCredits() - sumOfDebits();
     }
 
-    public static void main(String[] args){
-        String[] creditsAsString = args[0].split(",");
+    public static void main(String[] args){        String[] creditsAsString = args[0].split(",");
         String[] debitsAsString = args[1].split(",");
         float[] credits = new float[creditsAsString.length];
         float[] debits = new float[debitsAsString.length];
@@ -52,6 +51,21 @@ public class SavingsCalculator {
         System.out.println("Net Savings = " + netSavings + ", remaining days in month = " +
                 remainingDaysInMonth(LocalDate.now()));
 
+
+    }
+
+    private static boolean validateCommandArguments(String[] args){
+        String check = args[0];
+        switch(args[0]){
+            case 1: check == "bestLoanRates";
+                return args.length == 1;
+            case 2:
+                    return args.length == 3;
+            case 3:
+                return args.length == 4;
+
+        }
+        return false;
     }
 
 }
